@@ -4,6 +4,8 @@ primes = []
 not_primes = []
 
 for i in numbers:
+    if i == 1:
+        continue 
     is_prime = True
     if i > 1:
         for j in range(2, int(i ** 0.5) + 1 ):
